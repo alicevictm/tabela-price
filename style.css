@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+    /* Estilos para telas menores, como smartphones */
+}
+  
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para tablets */
+}
+  
+@media (min-width: 1025px) {
+    /* Estilos para telas maiores, como desktops */
+}
+
+body{
+    background-color: rgb(255, 183, 183);
+    padding: 2rem;
+    border: solid rgb(128, 89, 89)
+}
+
+.tabela{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.lista{
+    display: inline;
+    margin: 720px;
+}
+
+.calcula{
+   padding: 25px;
+   width: 300px;
+    border-radius: 40px;
+    padding: 10px;
+    width: 300px;
+    margin: 20px;
+    transition: 0.7s;
+    text-align: center;
+}
+
+
