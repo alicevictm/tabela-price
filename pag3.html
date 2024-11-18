@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadoras</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body class="pag3">
+  <header>
+    <h1 class="titulo">Tabelas Dinâmicas</h1>
+</header>
+  <!-- Tabela Price -->
+  <section>
+    <h2 class="tit3">Cálculo de Tabela Price</h2>
+    <div class="preencher">
+      <label for="valorPrice">Valor Financiado (R$):</label>
+      <input type="number" id="valorPrice" placeholder="Ex.: 10000" />
+      <label for="taxaPrice">Taxa de Juros Mensal (%):</label>
+      <input type="number" id="taxaPrice" placeholder="Ex.: 1" />
+      <label for="parcelasPrice">Número de Parcelas:</label>
+      <input type="number" id="parcelasPrice" placeholder="Ex.: 12" />
+      <button onclick="calcularTabelaPrice()">Calcular</button>
+    </div>
+    <table id="tabela-price">
+      <thead>
+        <tr>
+          <th>Parcela</th>
+          <th>Valor da Parcela (R$)</th>
+          <th>Juros (R$)</th>
+          <th>Amortização (R$)</th>
+          <th>Saldo Devedor (R$)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+  <!-- Cálculo de Custo de Oportunidade -->
+  <section>
+    <h2 class="tit3">Calculadora de Custo de Oportunidade</h2>
+    <div class="preencher">
+      <label for="investTesouro">Rentabilidade Tesouro Direto (% ao ano):</label>
+      <input type="number" id="investTesouro" placeholder="Ex.: 12" />
+      <label for="investOutro">Rentabilidade Alternativa (% ao ano):</label>
+      <input type="number" id="investOutro" placeholder="Ex.: 15" />
+      <label for="valorInvestido">Valor Investido (R$):</label>
+      <input type="number" id="valorInvestido" placeholder="Ex.: 10000" />
+      <label for="tempoInvest">Tempo de Investimento (em anos):</label>
+      <input type="number" id="tempoInvest" placeholder="Ex.: 2" />
+      <button onclick="calcularCusto()">Calcular</button>
+    </div><br>
+    <table id="tabela-custo">
+      <thead>
+        <tr>
+          <th>Investimento</th>
+          <th>Rentabilidade Total (R$)</th>
+          <th>Custo de Oportunidade (R$)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button class="voltar" onclick="window.location.href='pag1.html'">Voltar para a página principal</button>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

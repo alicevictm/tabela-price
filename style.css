@@ -1,41 +1,216 @@
-@media (max-width: 768px) {
-    /* Estilos para telas menores, como smartphones */
-}
-  
-@media (min-width: 769px) and (max-width: 1024px) {
-    /* Estilos para tablets */
-}
-  
-@media (min-width: 1025px) {
-    /* Estilos para telas maiores, como desktops */
+* {
+    margin: 0;                       /* Remove a margem padrão de todos os elementos */
+    padding: 0;                      /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box;          /* Faz com que o padding e a borda sejam incluídos no cálculo do tamanho do elemento */
 }
 
-body{
-    background-color: rgb(255, 183, 183);
-    padding: 2rem;
-    border: solid rgb(128, 89, 89)
+header {
+    background-color: #3d0d3c;       /* Define a cor de fundo do header */
+    color: white;                    /* Define a cor do texto dentro do header */
+    padding: 20px;                   /* Espaçamento interno */
+    text-align: center;              /* Alinha o texto centralizado */
 }
 
-.tabela{
-    font-size: 30px;
-    text-align: center;
-
+body {
+    background-color: whitesmoke;    /* Define a cor de fundo do corpo da página */
+    color: #333;                     /* Define a cor do texto padrão */
 }
 
-.lista{
-    display: inline;
-    margin: 720px;
+footer {
+    display: flex;                   /* Torna o footer um container flexível */
+    justify-content: center;         /* Centraliza o conteúdo horizontalmente */
+    align-items: center;             /* Centraliza o conteúdo verticalmente */
+    text-align: center;              /* Centraliza o texto dentro do footer */
+    padding: 20px;                   /* Espaçamento interno */
+    background-color: #3d0d3c;       /* Cor de fundo do footer */
+    color: rgba(255, 255, 255, 0.71); /* Cor do texto com transparência */
+    width: 100%;                     /* Faz com que o footer ocupe toda a largura disponível */
+    box-sizing: border-box;          /* Inclui padding e border no cálculo da largura */
+    position: relative;              /* Ajusta o posicionamento do footer */
+    margin-top: 20px;                /* Espaçamento superior */
 }
 
-.calcula{
-   padding: 25px;
-   width: 300px;
-    border-radius: 40px;
-    padding: 10px;
-    width: 300px;
-    margin: 20px;
-    transition: 0.7s;
-    text-align: center;
+p {
+    margin-bottom: 15px;              /* Espaço abaixo dos parágrafos */
+    line-height: 1.8rem;              /* Espaçamento entre linhas de texto */
+    font-size: 18px;                  /* Tamanho da fonte */
+    text-align: justify;              /* Justifica o texto */
 }
 
+h1 {
+    font-size: 2rem;                  /* Tamanho da fonte para o título principal */
+}
 
+h2 {
+    color: #3d0d3c;                   /* Cor do texto para h2 */
+    margin-bottom: 15px;              /* Espaçamento abaixo do h2 */
+    margin-top: 10px;                 /* Espaçamento acima do h2 */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Define a fonte */
+    font-size: 25px;                  /* Tamanho da fonte para h2 */
+}
+
+ul, li {
+    list-style-type: disc;            /* Estilo de marcador para listas */
+    margin-left: 20px;                /* Indenta a lista */
+    font-size: 18px;                  /* Tamanho da fonte para itens de lista */
+    text-align: justify;              /* Justifica o texto na lista */
+    line-height: 1.8rem;              /* Espaçamento entre linhas */
+}
+
+.preencher {
+    font-size: 18px;                  /* Tamanho da fonte para o formulário */
+    max-width: 800px;                 /* Limita a largura do formulário */
+    margin-left: auto;                /* Centraliza o formulário horizontalmente */
+    margin-right: auto;               /* Centraliza o formulário horizontalmente */
+}
+
+.content {
+    padding: 20px;                    /* Espaçamento interno */
+    max-width: 900px;                 /* Largura máxima */
+    margin: 0 auto;                   /* Centraliza o conteúdo */
+}
+
+button {
+    background-color: #004d56;        /* Cor de fundo do botão */
+    color: white;                     /* Cor do texto do botão */
+    padding: 10px;                    /* Preenchimento do botão */
+    border: none;                     /* Remove a borda */
+    cursor: pointer;                  /* Altera o cursor ao passar sobre o botão */
+    font-size: 1rem;                   /* Tamanho da fonte do botão */
+    border-radius: 5px;                /* Bordas arredondadas no botão */
+    margin-top: 20px;                  /* Espaço superior */
+    width: auto;                       /* Largura automática */
+    display: block;                    /* Faz o botão ser um bloco */
+    margin-left: auto;                 /* Centraliza o botão */
+    margin-right: auto;                /* Centraliza o botão */
+}
+
+button:hover {
+    font-size: 20px;                   /* Aumenta o tamanho da fonte ao passar o mouse */
+    transition: 0.4s;                  /* Adiciona uma transição suave */
+}
+
+.negrito {
+    color: #004d56;                    /* Cor do texto em negrito */
+    font-family: 'Courier New', Courier, monospace; /* Fonte para o texto em negrito */
+}
+
+.sublinhado {
+    text-decoration: underline;        /* Adiciona sublinhado */
+    text-decoration-color: rgba(142, 232, 184, 0.71); /* Cor do sublinhado */
+    text-decoration-style: wavy;       /* Estilo ondulado para o sublinhado */
+    text-decoration-thickness: 3px;    /* Espessura do sublinhado */
+}
+
+.lista li::marker {
+    color: #004d56;                    /* Cor do marcador (ponto) nas listas */
+    font-size: 20px;                   /* Tamanho do marcador */
+}
+
+.titulo {
+    text-align: center;                /* Centraliza o título */
+    color: rgba(255, 255, 255, 0.71);  /* Cor do texto do título */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Fonte para o título */
+}
+
+.pag3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Fonte específica */
+    margin-left: 250px;                /* Espaçamento à esquerda */
+    margin-right: 250px;               /* Espaçamento à direita */
+    border: 5px solid #3d0d3c;         /* Borda em torno da página */
+    background-color: whitesmoke;      /* Cor de fundo da página */
+}
+
+html {
+    background-color: #3d0d3c6f;       /* Cor de fundo do HTML com transparência */
+}
+
+.link {
+    color: #004d56;                    /* Cor do texto dos links */
+    text-decoration: none;             /* Remove o sublinhado dos links */
+}
+
+#result {
+    margin-top: 20px;                  /* Espaço superior */
+    font-size: 1.2rem;                 /* Tamanho da fonte */
+    color: #005f6b;                    /* Cor do texto */
+}
+
+label {
+    display: block;                    /* Faz o label ser um bloco */
+    margin-top: 10px;                  /* Espaço superior */
+}
+
+input, button {
+    width: 100%;                       /* Faz os inputs e botões ocuparem 100% da largura */
+    padding: 10px;                     /* Preenchimento interno */
+    margin-top: 5px;                   /* Espaço superior */
+    border: 1px solid #ddd;           /* Borda leve */
+    border-radius: 5px;                /* Bordas arredondadas */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Fonte do input e botão */
+}
+
+.tit3 {
+    text-align: center;                /* Centraliza o texto */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte específica */
+    margin-top: 15px;                  /* Espaço superior */
+    margin-bottom: 15px;               /* Espaço inferior */
+}
+
+.result {
+    margin-top: 20px;                  /* Espaço superior */
+    background-color: #e2f0d9;         /* Cor de fundo da área de resultado */
+    padding: 10px;                     /* Preenchimento interno */
+    border-radius: 5px;                /* Bordas arredondadas */
+    color: #2c6e2f;                    /* Cor do texto */
+    margin-bottom: 15px;               /* Espaço inferior */
+}
+
+.voltar {
+    background-color: #3d0d3c;         /* Cor de fundo do botão voltar */
+    color: rgba(255, 255, 255, 0.71);  /* Cor do texto */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Fonte do botão voltar */
+}
+
+/* Esconde as tabelas até o cálculo ser realizado */
+#tabela-price, #tabela-custo {
+    display: none;                     /* Esconde a tabela até ser necessária */
+    margin-top: 20px;                   /* Espaço superior */
+    width: 100%;                        /* Ocupa 100% da largura disponível */
+    max-width: 800px;                   /* Largura máxima */
+    margin-left: auto;                  /* Centraliza a tabela */
+    margin-right: auto;                 /* Centraliza a tabela */
+    border-collapse: collapse;         /* Faz com que as bordas das células se juntem */
+    border-radius: 8px;                 /* Bordas arredondadas */
+    box-shadow: 4px 4px 10px 0px rgba(142, 232, 184, 0.71); /* Adiciona sombra na tabela */
+    overflow: hidden;                  /* Oculta qualquer conteúdo que ultrapasse os limites da tabela */
+}
+
+/* Estilos para as células da tabela */
+table th, table td {
+    padding: 12px 20px;                 /* Espaçamento interno das células */
+    text-align: center;                 /* Alinha o texto ao centro */
+    border: 1px solid #ddd;            /* Borda leve */
+    font-size: 1rem;                    /* Tamanho da fonte */
+}
+
+table th {
+    background-color: #3d0d3c;         /* Cor de fundo dos cabeçalhos da tabela */
+    color: rgba(255, 255, 255, 0.71);  /* Cor do texto nos cabeçalhos */
+}
+
+table td {
+    background-color: #f9f9f9;         /* Cor de fundo das células */
+}
+
+table tr:nth-child(even) td {
+    background-color: #f1f1f1;         /* Cor de fundo para linhas pares */
+}
+
+table tr:hover td {
+    background-color: #d9e7f7;         /* Cor de fundo ao passar o mouse sobre a linha */
+}
+
+table tbody tr {
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo ao passar o mouse */
+}

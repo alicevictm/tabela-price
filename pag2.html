@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo da Tabela Price e Rentabilidade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Exemplo de Cálculo da Tabela Price e Rentabilidade</h1>
+    </header>
+    <section class="content">
+        <h2 class="sublinhado">Entenda o Cálculo da Tabela Price</h2>
+        <p>A Tabela Price é usada para calcular parcelas fixas em um financiamento. O cálculo é baseado em uma fórmula matemática que leva em consideração:</p>
+        <ul class="lista">
+            <li>O valor financiado</li>
+            <li>A taxa de juros mensal</li>
+            <li>O número de parcelas</li>
+        </ul><br>
+        <p>A fórmula utilizada para calcular a parcela fixa é:</p>
+        <pre>P = (PV * i) / (1 - (1 + i)<sup>-n</sup>)</pre><br>
+        <ul class="lista">
+            <li><strong>P</strong> = Parcela fixa</li>
+            <li><strong>PV</strong> = Valor presente (valor financiado)</li>
+            <li><strong>i</strong> = Taxa de juros mensal</li>
+            <li><strong>n</strong> = Número de parcelas</li>
+        </ul><br>
+        <h2>Exemplo Prático: Cálculo da Parcela do Financiamento</h2><br>
+        <div class="preencher">
+            <label for="valor">Valor Financiado (R$):</label>
+            <input type="number" id="valor" placeholder="Valor financiado" value="10000">
+        </div>
+        <div  class="preencher">
+            <label for="juros">Taxa de Juros Mensal (%):</label>
+            <input type="number" id="juros" placeholder="Taxa de juros mensal" value="1">
+        </div>
+        <div  class="preencher">
+            <label for="parcelas">Número de Parcelas:</label>
+            <input type="number" id="parcelas" placeholder="Número de parcelas" value="12">
+        </div><br>
+        <button onclick="calcularParcelas()">Calcular Parcela</button><br>
+        <div class="result" id="resultado" style="display: none;">
+            <!-- Resultado do cálculo da parcela será exibido aqui -->
+        </div><br>
+        <p>Na próxima página, você terá a oportunidade de montar uma tabela com as informações fornecidas. Durante o processo, pode se deparar com alguns termos que não são familiares. Para ajudá-lo, preparamos uma explicação detalhada de cada um desses termos, para que você possa entender tudo de maneira clara e completa.</p>
+        <h2 class="sublinhado">O que é Custo de Oportunidade?</h2>
+        <p><strong class="negrito">Custo de Oportunidade:</strong> É o valor do que você perde ao escolher uma alternativa em vez de outra. Em outras palavras, é o benefício ou valor que você teria obtido se tivesse escolhido a segunda melhor opção disponível. Em finanças, isso se aplica ao comparar diferentes investimentos. Quando você escolhe um investimento, o custo de oportunidade é o que você deixou de ganhar ao não escolher outras opções.</p>
+        <h2 class="sublinhado">Explicação sobre Amortização e Saldo Devedor</h2>
+        <p><strong class="negrito">Amortização:</strong> É o valor que efetivamente reduz o saldo devedor do financiamento. A cada pagamento, parte do valor da parcela é usada para pagar os juros e a outra parte reduz o valor principal da dívida.</p>
+        <p><strong class="negrito">Saldo Devedor:</strong> É o valor restante do empréstimo que ainda não foi pago. A cada parcela paga, o saldo devedor diminui, até que o valor total seja quitado.</p>
+        <h2 class="sublinhado">Rentabilidade de Investimentos</h2>
+        <p><strong class="negrito">Rentabilidade do Tesouro Direto:</strong> É o retorno que você recebe ao investir em títulos públicos do governo. O Tesouro Direto possui diferentes tipos de títulos, e a rentabilidade depende do tipo de título escolhido (como Tesouro Selic, Tesouro Prefixado ou Tesouro IPCA).</p>
+        <p><strong class="negrito">Rentabilidade Alternativa:</strong> É o retorno de um outro tipo de investimento, como ações, fundos imobiliários ou outras aplicações financeiras. Geralmente, a rentabilidade alternativa pode ser mais arriscada, mas também pode oferecer maior retorno dependendo da estratégia de investimento adotada.</p>
+        <button onclick="window.location.href='pag3.html'">Gerar sua Tabela Price</button>
+        <button onclick="window.location.href='pag1.html'" class="voltar">Voltar para a página principal</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 - Tabela Price explicada por Alice, Julia, Kananda, Karol, Mariana e Nicoly <3</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
